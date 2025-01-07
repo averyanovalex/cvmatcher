@@ -1,0 +1,86 @@
+Senior Machine Learning Engineer (AI Foundation)
+London
+We’re very proud of our achievements:
+
+In July, we secured a $200M investment led by General Atlantic to help revolutionise women’s health, and became the first purely digital consumer women’s health app to achieve unicorn status! 🦄
+
+We’ve had 380M+ downloads, have almost 70M monthly users, are #1 by installs in the iOS Health category, hit 4.9 stars on the App Store (3M+ reviews), are backed by 9 VCs, had a 40% revenue increase last year, and topped a valuation of $1B.
+
+We’re a growing, ambitious HealthTech business building the essential digital health partner of tomorrow to empower women, girls, and people who menstruate with the knowledge and support they need to stay well and live better.
+
+Our cycle, ovulation and pregnancy tracking, educational content and anonymised community platform have been trusted for years by millions to help them feel more in control of their health every day.
+
+Now, we’re harnessing the power of data analytics and AI to build a smarter future, one where we all know our bodies better, with an aim to become the essential health partner to women worldwide.
+
+The Job
+
+We are Flo, the world’s most popular female health app! Our engineers aren’t just building a better product; they’re making the world a better place by improving female health. We leverage Machine Learning and AI to create a more personalised experience for our users: from providing more accurate cycle predictions to delivering relevant, personalised, and medically credible health insights. 
+
+We are looking for a Machine Learning Engineer to join the AI Foundations team. This team is developing groundbreaking features that leverage our medical expertise, technical skills, rapid adoption of new technologies (like LLMs), product knowledge, and a deep understanding of our users’ needs. If you’re passionate about technology, especially advancements in generative AI, and driven by delivering value to users, we would love to hear from you!
+
+Your Experience
+
+Must have:
+
+4+ years of professional experience in the field of machine learning
+Demonstrated success in building and deploying large-scale machine learning models; experience with large-scale LLM applications is a bonus
+Ability to devise creative solutions to intricate technical challenges, including experience in systems design with the ability to architect and explain ML/LLM pipelines
+Strong Python programming skills for efficient model development and deployment
+Experience with both traditional ML and modern LLM frameworks
+Understanding of the entire ML/LLM development process, including CI/CD, version control, testing, MLOps/LLMOps, and agile methodologies
+Experience in building and managing data pipelines using tools like Apache Spark
+Excellent communication skills and ability to collaborate with diverse teams
+Commitment to responsible AI practices, including fairness, accountability, and transparency
+Nice to have:
+
+Advanced degree in Computer Science, Mathematics, or a related field
+Familiarity with statistical and measurement fundamentals and running and evaluating AB tests
+Data visualisation skills
+Experience in the MedTech domain
+What you'll be doing
+
+You'll be responsible for:
+
+Explore, develop and test complex ML/AI systems to improve female health
+Work with state-of-the-art technologies, such as most advanced LLMs and Generative AI approaches, to build solutions that are medically safe and work at scale
+Work in a fast-paced environment to quickly build and validate product hypotheses, taking end-to-end ownership of ML/AI products
+Build the future-proof infrastructure for serving Gen AI features at Flo, bringing our AI vision and strategy to life
+Constantly improve our technical capabilities by researching and implementing best practices in the context of the fastly evolving space of LLMs
+Work in a cross-functional setup alongside other engineering (ML, Backend, QA), product, and analytics teams
+#LI-Hybrid #LI-LM12
+
+Salary Range - per year
+
+£80,000 - £150,000 GBP
+
+Ranges may vary depending on your skills, competencies and experience.
+
+Reward
+
+People perform better when they’re happy, paid well, looked after and supported. 
+
+On top of competitive salaries, Flo's employees have access to:
+
+A flexible working environment with the opportunity to come into the office and work from home
+Company equity grants through Flo’s Employee Share Option Plan (ESOP)
+Paid holiday and sick leave 
+Fully paid female health and sick leave, in addition to holiday and regular sick leave
+Workations - an opportunity to work abroad for two months a year
+Six months paid maternity leave, and one months paid paternity leave (subject to qualifying conditions) inclusive of same-sex and adoptive parents
+Career growth, progression, and learning development resources
+Annual salary reviews
+Unlimited free premium Flo subscriptions
+A whole host of other benefits (health/pension/social schemes)
+ 
+
+Our Culture
+
+We’re problem solvers, we’re adaptable, we’re empathy driven and results led. 
+
+People here like working in a fast-paced, multi-national, multi-cultural and ever changing environment. Everyone has an impact on a powerful mission, and is happy to roll their sleeves up to ideate solutions and put them in place. Being part of a  growing business means that sometimes it's not easy and we work hard, but our mission is always at the forefront of what we do. 
+
+Diversity, Equity and Inclusion
+
+The strength of our workforce is in the diverse backgrounds of our employees, and Flo is committed to applying its equal opportunities policy at all stages of recruitment and selection. This means recruitment and selection of talent into Flo Health companies is only based on individual merit and qualifications directly related to professional competence. Shortlisting, interviewing, and selection will always be carried out without regard to gender identity or expression, sexual orientation, marital or civil partnership status, color, race, nationality, ethnic or national origins, religion or beliefs, ancestry, age, veteran status, mental or physical disability, medical condition, pregnancy or maternity status, trade union membership, or any other protected characteristics.
+
+By applying for the above role, you confirm that you have reviewed our privacy notice for job applicants: https://flo.health/privacy-policy-for-job-applicants 

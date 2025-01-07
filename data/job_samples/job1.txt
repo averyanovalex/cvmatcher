@@ -1,0 +1,32 @@
+Backend Developer (Golang)
+RemoteSMEFull time
+
+Limassol, Limassol, Cyprus
+Almaty, Almaty Region, Kazakhstan
+Overview
+Application
+Description
+We are looking for a Backend Software Engineer (Golang) to join our team at our European fintech startup. Our startup serves more than 500,000 customers across Europe and develops banking products for customers having 500+ microservices on board.
+
+The ideal candidate for this role will be a passionate and knowledgeable engineer who is comfortable developing new features and services as well as maintaining existing codebase. The candidate should have a strong background in software engineering and computer science with a particular focus on developing robust and reliable solutions.
+
+We are using a modern stack of technologies and platforms like PostgreSQL, Kafka, AWS, Kubernetes, Gitlab CI, Prometheus, Grafana.
+
+Responsibilities:
+
+Develop banking microservices for SME products.
+Participate in code reviews and provide feedback to other team members.
+Work closely with other software engineers and stakeholders to develop robust and reliable banking solutions.
+Work with operations and support teams to address customer issues and production problems.
+Ensure that all solutions are compliant with industry regulations and standards.
+Requirements
+Bachelor’s degree in Computer Science or related field.
+At least 3 years of experience developing software applications using (Golang/Java/Kotlin/C#/C++).
+Excellent problem-solving and communication skills.
+Ability to work in a fast-paced, dynamic environment.
+Experience in developing banking microservices and applications will be a huge advantage.
+Benefits
+We have a hybrid model in one of our offices, Limassol or Almaty, or fully remote outside office locations.
+We support relocation (visa, package) when needed.
+This is a middle/senior-level position with a competitive salary and benefits package (depending on location).
+If you're looking for an exciting new opportunity to take your engineering skills to the next level and make an impact in the world of finance, then Vivid is the perfect place for you. Come and join our talented team of professionals and help us revolutionize the way people think about their money!
