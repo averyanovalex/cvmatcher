@@ -1,5 +1,17 @@
 import streamlit as st
-import PyPDF2
+import os
+from tempfile import NamedTemporaryFile
+
+from match import (
+    extract_job_requirements,
+    get_cv_text_from_pdf,
+    extract_cv_features,
+    compare_cv_with_job,
+    total_match_score,
+)
+
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
 
 def main():
     st.title("CV Matcher")
@@ -13,12 +25,18 @@ def main():
     
     st.header("CV Upload")
     uploaded_file = st.file_uploader("Upload your CV in PDF format", type=['pdf'])
+    
     if uploaded_file is not None:
+        # Сохраняем загруженный файл во временный файл
+        with NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
+            tmp_file.write(uploaded_file.getvalue())
+            temp_path = tmp_file.name
+            
+        # Извлекаем текст из PDF
+        cv_text = get_cv_text_from_pdf(temp_path)
+        os.unlink(temp_path)  # Удаляем временный файл
+        
         with st.expander("View Uploaded CV"):
-            pdf_reader = PyPDF2.PdfReader(uploaded_file)
-            cv_text = ""
-            for page in pdf_reader.pages:
-                cv_text += page.extract_text()
             st.text_area("CV Content", cv_text, height=300)
 
     if st.button("🎯 Compare", type="primary"):
@@ -30,23 +48,60 @@ def main():
             return
             
         with st.spinner("Analyzing match..."):
+            # Извлекаем требования из описания вакансии
+            job_reqs = extract_job_requirements(job_description)
+            
+            # Извлекаем характеристики из резюме
+            cv_feats = extract_cv_features(cv_text)
+            
+            # Сравниваем резюме с требованиями
+            comparison = compare_cv_with_job(cv_feats, job_reqs)
+            
+            # Подсчитываем общий скор
+            total_score = total_match_score(comparison)
+            
             st.success("Analysis complete!")
             
+            # Выводим результаты
             st.header("Comparison Results")
-            col1, _, _ = st.columns(3)
+            col1, col2, col3 = st.columns(3)
             with col1:
-                st.metric("Overall Match", "75%")
+                st.metric("Overall Match", f"{total_score}%")
             
             st.subheader("Detailed Analysis")
-            with st.expander("View Details"):
-                st.write("🔹 Technical Skills")
-                st.progress(0.8, text="Python (80%)")
-                st.progress(0.6, text="SQL (60%)")
-                st.progress(0.9, text="Git (90%)")
+            with st.expander("View Details", expanded=True):
+                # Position Match
+                st.write("🔹 Position Match")
+                st.progress(comparison.position_match / 10, 
+                          text=f"Position Match ({comparison.position_match * 10}%)")
                 
-                st.write("🔹 Soft Skills")
-                st.progress(0.7, text="Teamwork (70%)")
-                st.progress(0.8, text="Communication (80%)")
+                # Technical Skills
+                st.write("🔹 Technical Skills")
+                st.progress(comparison.technical_skills_match / 10, 
+                          text=f"Technical Skills ({comparison.technical_skills_match * 10}%)")
+                
+                # Experience
+                st.write("🔹 Experience")
+                st.progress(comparison.experience_match / 10, 
+                          text=f"Experience Match ({comparison.experience_match * 10}%)")
+                experience_years_icon = "✅" if comparison.experience_years_match else "❌"
+                st.write(f"{experience_years_icon} Required years of experience")
+                
+                # Achievements
+                st.write("🔹 Achievements")
+                st.progress(comparison.achievements_match / 10, 
+                          text=f"Achievements ({comparison.achievements_match * 10}%)")
+                
+                # Education
+                st.write("🔹 Education")
+                st.progress(comparison.education_match / 10, 
+                          text=f"Education ({comparison.education_match * 10}%)")
+                
+                # Language Skills
+                st.write("🔹 Language Skills")
+                st.progress(comparison.language_skills_match / 10, 
+                          text=f"Language Skills ({comparison.language_skills_match * 10}%)")
+
 
 if __name__ == "__main__":
     st.set_page_config(
