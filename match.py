@@ -1,6 +1,13 @@
+import logging
+import os
+
 from openai import OpenAI
 from pydantic import BaseModel, Field
 from PyPDF2 import PdfReader
+
+
+logging.basicConfig(level=logging.INFO)
+logging.info("OPENAI_API_KEY: %s", os.getenv("OPENAI_API_KEY")[0:5] + "..." + os.getenv("OPENAI_API_KEY")[-5:])
 
 OPENAI_MODEL = "gpt-4o"
 
