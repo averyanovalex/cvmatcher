@@ -2,3 +2,5 @@
 .env
 .DS_Store
 temp
+.streamlit/secrets.toml
+__pycache__/
