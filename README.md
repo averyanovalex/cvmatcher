@@ -2,6 +2,9 @@
 
 A Streamlit application that uses AI to match CVs with job descriptions. The app analyzes both the job requirements and CV content to provide a detailed matching score and analysis.
 
+## How it works (video)
+https://youtu.be/xyWSvuizG2M
+
 ## Features
 
 - Extract requirements from job descriptions
